@@ -1,5 +1,5 @@
 <template>
-    <button :class="[bgColor, textColor, isDisabled ? 'disabled' : '', `btn-${type}`]">
+    <button @click="onClick" :class="[bgColor, textColor, isDisabled ? 'disabled' : '', `btn-${type}`]">
       {{label}}
     </button>
 </template>
